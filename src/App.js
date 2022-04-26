@@ -1,10 +1,12 @@
-import { Component } from 'react';
-import Info from './cp.8/Info';
+import React from 'react';
+import Average from './cp.9/Average';
 
-class App extends Component {
-    render() {
-        return (<Info />);
-    }
-}
+const App = () => {
+  return (
+    <div>
+      <Average />
+    </div>
+  );
+};
 
 export default App;
