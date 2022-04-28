@@ -1,12 +1,12 @@
 import React from 'react';
-import Average from './cp.9/Average';
+import Info from './cp.8/Info';
 
 const App = () => {
-  return (
-    <div>
-      <Average />
-    </div>
-  );
+    return (
+        <div>
+            <Info />
+        </div>
+    );
 };
 
 export default App;
