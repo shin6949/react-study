@@ -7,4 +7,3 @@
 - IDE: WebStorm 2022.01
 - OS: Windows 10 / macOS 12.3
 - node: 16.14.2
-- 
