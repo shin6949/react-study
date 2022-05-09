@@ -10,3 +10,6 @@
 [submodule "cp.7"]
 	path = cp.7
 	url = ../cp.7
+[submodule "cp.8"]
+	path = cp.8
+	url = ../cp.8
