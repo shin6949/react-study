@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes, Link } from 'react-router-dom';
+import About from './About';
+import Home from './Home';
+import Profile from './Profile';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ul>
+        <li>
+          <Link to="/">홈</Link>
+        </li>
+        <li>
+          <Link to="/about">소개</Link>
+        </li>
+        <li>
+          <Link to="/profile/cocoblue">COCOBLUE 프로필</Link>
+        </li>
+        <li>
+          <Link to="/profile/gildong">gildong 프로필</Link>
+        </li>
+      </ul>
+      <Routes>
+        {/* 
+          책과 다른 내용, component로 선언한 경우, 작동하지 않음.
+        */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/info" element={<About />} />
+        <Route path="/profile/:username" element={<Profile />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
